@@ -64,28 +64,32 @@ public class MainActivity extends AppCompatActivity {
             }
 
         timeOne = System.currentTimeMillis();
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(678))) + "");
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(100))) + "");
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(200))) + "");
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(300))) + "");
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(400))) + "");
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(1500))) + "");
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(2000))) + "");
-        Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(2345))) + "");
+        for(int i = 0; i < 1000; i++){
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(678))) + "");
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(100))) + "");
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(200))) + "");
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(300))) + "");
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(400))) + "");
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(1500))) + "");
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(2000))) + "");
+            Log.d("FIND TREE BOOL! STUFF", stuffTree.find(new StuffTree(stuffArrayList.get(2345))) + "");
+        }
         timeTwo = System.currentTimeMillis();
         Log.d("FIND TREE TIME! STUFF", timeTwo - timeOne + "");
         editText.setText(editText.getText() + "\n\n" + "FIND TREE BOOL! STUFF " + stuffTree.find(new StuffTree(stuffArrayList.get(678))));
         editText.setText(editText.getText() + "\n\n" + "FIND TREE TIME! STUFF " + (timeTwo - timeOne));
 
         timeOne = System.currentTimeMillis();
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(678), stuffArrayList) + "");
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(100), stuffArrayList) + "");
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(200), stuffArrayList) + "");
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(300), stuffArrayList) + "");
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(400), stuffArrayList) + "");
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(1500), stuffArrayList) + "");
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(2000), stuffArrayList) + "");
-        Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(2345), stuffArrayList) + "");
+        for(int i = 0; i < 1000; i++){
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(678), stuffArrayList) + "");
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(100), stuffArrayList) + "");
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(200), stuffArrayList) + "");
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(300), stuffArrayList) + "");
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(400), stuffArrayList) + "");
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(1500), stuffArrayList) + "");
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(2000), stuffArrayList) + "");
+            Log.d("FIND BUBBLE BOOL! STUFF", find(stuffArrayList.get(2345), stuffArrayList) + "");
+        }
         timeTwo = System.currentTimeMillis();
         Log.d("FIND BUBBLE TIME! STUFF", timeTwo - timeOne + "");
         editText.setText(editText.getText() + "\n\n" + "FIND BUBBLE BOOL! STUFF " + find(stuffArrayList.get(678), stuffArrayList));
